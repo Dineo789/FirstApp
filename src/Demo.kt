@@ -58,4 +58,22 @@ fun main( arg: Array<String>){
         println("not same")
 
 
+    //When(Replace switch statement)
+    val number : Int = 1
+    when(number){
+        1-> println("One")
+        2-> println("Two")
+        3-> println("Three")
+        else-> println("Input is incorrect")
+    }
+    //When as an expression
+
+   var str = when(number){
+        1-> "One in str"
+        2-> "Two in str"
+        3-> "Three in str"
+        else-> "Input is incorrect"
+    }
+    println("When as expression. Str = $str")
+
 }
